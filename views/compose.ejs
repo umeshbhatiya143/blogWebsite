@@ -1,0 +1,23 @@
+<%- include("header") -%>
+
+<h1 class="">Compose</h1>
+
+<div class="container">
+<form action="/compose" method="post">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Title</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="postTitle">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Post</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="postBody"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" name="list" >Publish</button>
+        </div>
+      </form>
+    
+</form>
+</div>
+
+<%- include("footer") -%>
